@@ -6,14 +6,23 @@ public class Main
 {
 	public static void main(String[] args)
 	{
-		RemoteControl rc = new RemoteControl();
-		
+		RemoteControl rcOutdoorLight = new RemoteControl();
 		OutdoorLight outdoorLight = new OutdoorLight();
 		
-		rc.setCommand(0, new OutdoorLightOnCommand(outdoorLight));
-		rc.setCommand(1, new OutdoorLightOffCommand(outdoorLight));
+		rcOutdoorLight.setCommand(0, new OutdoorLightOnCommand(outdoorLight));
+		rcOutdoorLight.setCommand(1, new OutdoorLightOffCommand(outdoorLight));
 		
-		rc.pushButton(0);
-		rc.pushButton(1);
+		rcOutdoorLight.pushButton(0);
+		rcOutdoorLight.pushButton(1);
+		
+		// Remote is being reused for all kinds of devices.
+		RemoteControl rcTv = new RemoteControl();
+		TV tv = new TV();
+		
+		rcTv.setCommand(0, new TVOnCommand(tv));
+		rcTv.setCommand(1, new TVOffCommand(tv));
+		
+		rcTv.pushButton(0);
+		rcTv.pushButton(1);
 	}
 }

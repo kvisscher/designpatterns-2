@@ -2,6 +2,8 @@ package nl.hva.dp2.devices;
 
 public class HotTub
 {
+    public float degrees;
+    
 	public void circulate()
 	{
 		System.out.println("Hot tub is now circulating");
@@ -17,8 +19,12 @@ public class HotTub
 		System.out.println("Hot tub jets are off");
 	}
 	
-	public void setTemperature()
+	public float getTemperature() {
+	    return this.degrees;
+	}
+	
+	public void setTemperature(float degrees)
 	{
-		
+		this.degrees = degrees;
 	}
 }

@@ -2,12 +2,12 @@ package nl.hva.dp2.devices;
 
 public class Sprinkler
 {
-	public void turnOn()
+	public void on()
 	{
 		System.out.println("Sprinkler turned on");
 	}
 	
-	public void turnOff()
+	public void off()
 	{
 		System.out.println("Sprinkler turned off");
 	}
