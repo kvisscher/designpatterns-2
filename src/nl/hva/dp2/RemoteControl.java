@@ -1,5 +1,7 @@
 package nl.hva.dp2;
 
+import nl.hva.dp2.commands.Command;
+
 public class RemoteControl
 {
 	private Command[] commands;

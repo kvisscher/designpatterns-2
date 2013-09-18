@@ -1,4 +1,4 @@
-package nl.hva.dp2;
+package nl.hva.dp2.commands;
 
 import nl.hva.dp2.devices.CeilingLight;
 
@@ -6,7 +6,7 @@ public class CeilingLightOnCommand implements Command
 {
 	private CeilingLight ceilinglight;
 
-	public CeilingFanOnCommand(CeilingLight ceilinglight)
+	public CeilingLightOnCommand(CeilingLight ceilinglight)
 	{
 		this.ceilinglight = ceilinglight;
 	}
@@ -14,6 +14,6 @@ public class CeilingLightOnCommand implements Command
 	@Override
 	public void execute()
 	{
-		ceilingfan.on();
+		ceilinglight.on();
 	}
 }

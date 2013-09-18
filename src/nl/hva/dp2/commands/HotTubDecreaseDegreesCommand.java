@@ -1,4 +1,4 @@
-package nl.hva.dp2;
+package nl.hva.dp2.commands;
 
 import nl.hva.dp2.devices.HotTub;
 
@@ -14,7 +14,7 @@ public class HotTubDecreaseDegreesCommand implements Command
 	@Override
 	public void execute()
 	{
-		hottub.setTemperature(hottub.getTemperature() - 1.0);
+		hottub.setTemperature(hottub.getTemperature() - 1.0f);
 		
 		System.out.println("Decreased degrees of hottub is now: " + hottub.getTemperature() );
 	}

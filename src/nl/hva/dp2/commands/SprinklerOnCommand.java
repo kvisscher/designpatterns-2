@@ -1,10 +1,10 @@
-package nl.hva.dp2;
+package nl.hva.dp2.commands;
 
 import nl.hva.dp2.devices.Sprinkler;
 
 public class SprinklerOnCommand implements Command
 {
-	private Sprinkler ceilingfan;
+	private Sprinkler sprinkler;
 
 	public SprinklerOnCommand(Sprinkler sprinkler)
 	{

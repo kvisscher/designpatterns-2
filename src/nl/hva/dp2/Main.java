@@ -1,6 +1,11 @@
 package nl.hva.dp2;
 
+import nl.hva.dp2.commands.OutdoorLightOffCommand;
+import nl.hva.dp2.commands.OutdoorLightOnCommand;
+import nl.hva.dp2.commands.TVOffCommand;
+import nl.hva.dp2.commands.TVOnCommand;
 import nl.hva.dp2.devices.OutdoorLight;
+import nl.hva.dp2.devices.TV;
 
 public class Main
 {
